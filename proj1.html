@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #d1,#d2,#d3{
+            width: 50%;
+            border: 1px solid black;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        #ul{
+            margin: 30px 0px;
+            width: 10%;
+            overflow: hidden;
+        }
+
+        .list{
+            background-color: blue;
+            color: red;
+            animation-name: trans;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            
+        }
+
+        @keyframes trans {
+            from{
+                transform: translateX(200%);
+                opacity: 0;
+            }
+            to{
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+
+
+
+
+        .list1{
+            background-color: blue;
+            color: red;
+            animation-name: trans1;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            
+        }
+
+        @keyframes trans1 {
+            from{
+                transform: translateX(-200%);
+                opacity: 0;
+            }
+            to{
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+        
+        #swap{
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            border-left: 6px solid black;
+            border-right: 6px solid black;
+            border-radius: 50%;
+            animation-name: rot;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rot {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <select name="" id="s1">
+        <option value="text">text</option>
+    </select>
+    <button onclick="fun1();">Add</button>
+
+    <div id="d1">
+
+    </div>
+
+    <div id="d2" >
+
+    </div>
+
+
+    <div id="d31">
+        <div id="extra1">
+            <input type="text" name="" id="">
+        </div>
+    </div>
+    <div id="d32">
+        <div id="extra2">
+            <input type="text" name="" id="">
+        </div>
+    </div>
+    <button onclick="fun()">submit</button>
+
+
+    <ul id="ul">
+        
+    </ul>
+    <button onclick="fun1()">submit</button>
+
+    <p style="visibility: hidden;">swap1</p>
+    <p>swap2</p>
+    <p>swap3</p>
+    <p>swap4</p>
+    <p>swap5</p>
+    <p>swap6</p>
+    <button onclick="fun2()">add</button>
+    
+    
+
+    
+    
+
+    <div id="swap"></div>
+
+
+
+
+
+
+
+
+
+    <script src="proj1.js"></script>
+</body>
+</html>
